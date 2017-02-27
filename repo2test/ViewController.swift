@@ -14,6 +14,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    @IBAction func azione2click(_ sender: Any) {
+        print("azione dev 2")
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
