@@ -12,6 +12,7 @@
 		6EC5926F1E6440C40065370C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EC5926D1E6440C40065370C /* Main.storyboard */; };
 		6EC592711E6440C40065370C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EC592701E6440C40065370C /* Assets.xcassets */; };
 		6EC592741E6440C40065370C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EC592721E6440C40065370C /* LaunchScreen.storyboard */; };
+		6EC5927E1E64766D0065370C /* DIALOG_UTILS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC5927D1E64766D0065370C /* DIALOG_UTILS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6EC592701E6440C40065370C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EC592731E6440C40065370C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6EC592751E6440C40065370C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EC5927D1E64766D0065370C /* DIALOG_UTILS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIALOG_UTILS.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				6EC592701E6440C40065370C /* Assets.xcassets */,
 				6EC592721E6440C40065370C /* LaunchScreen.storyboard */,
 				6EC592751E6440C40065370C /* Info.plist */,
+				6EC5927D1E64766D0065370C /* DIALOG_UTILS.swift */,
 			);
 			path = repo2test;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC5927E1E64766D0065370C /* DIALOG_UTILS.swift in Sources */,
 				6EC5926C1E6440C40065370C /* ViewController.swift in Sources */,
 				6EC5926A1E6440C40065370C /* AppDelegate.swift in Sources */,
 			);
@@ -299,6 +303,7 @@
 				6EC5927A1E6440C40065370C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -16,7 +16,22 @@ class ViewController: UIViewController {
     }
 
     @IBAction func azione1click(_ sender: Any) {
-        print("azione dev 1")
+       // print("azione dev 1")
+        
+        /* DIALOG_UTILS.sharedInstance.showAlertDefault(v:self, titolo: "Attenzione",messaggio: "Azione 1", confirm:"Ok", confirmAction:
+         { action in
+         print("Action")
+         })*/
+        
+        
+        var optz = ["Opzione 1","Opzione 2","Opzione 3"]
+        //let optz = [String]()
+        optz.append("Opzione 4")
+        optz.append("Opzione 5")
+        DIALOG_UTILS.sharedInstance.showAlertMultipleChoice(v:self, titolo: "Attenzione",messaggio: "Azione 1", confirm:"Ok", opzioni:optz, confirmAction:
+            { action in
+                print("Action ", action.title ?? "")
+        })
         
     }
     
