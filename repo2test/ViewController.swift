@@ -1,4 +1,4 @@
-//
+ //
 //  ViewController.swift
 //  repo2test
 //
@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    @IBAction func azione2click(_ sender: Any) {
+        print("azione dev 2")
     }
 
     @IBAction func azione1click(_ sender: Any) {
