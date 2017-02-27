@@ -25,13 +25,27 @@ class DIALOG_UTILS {
         let alertController = UIAlertController(title: titolo, message:
             messaggio, preferredStyle: UIAlertControllerStyle.alert)
         alertController.addAction(UIAlertAction(title: confirm, style: UIAlertActionStyle.default,handler:confirmAction))
-        if(opzioni != nil){
-            for str in opzioni {
+         for str in opzioni {
                 if str is String {
                     alertController.addAction(UIAlertAction(title:str as? String, style: UIAlertActionStyle.default,handler:confirmAction))
                 }
+         }
+        v.present(alertController, animated: true, completion: nil)
+        
+    }
+    
+    
+    
+    func showActionSheet(v:ViewController, titolo:String, messaggio:String, confirm:String, opzioni:Array<Any> , confirmAction: @escaping (UIAlertAction) -> Void  ){
+        
+        let alertController = UIAlertController(title: titolo, message:
+            messaggio, preferredStyle: UIAlertControllerStyle.actionSheet)
+        for str in opzioni {
+            if str is String {
+                alertController.addAction(UIAlertAction(title:str as? String, style: UIAlertActionStyle.default,handler:confirmAction))
             }
         }
+        alertController.addAction(UIAlertAction(title: confirm, style: UIAlertActionStyle.cancel, handler:confirmAction))
         v.present(alertController, animated: true, completion: nil)
         
     }
