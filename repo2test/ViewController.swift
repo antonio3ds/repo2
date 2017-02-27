@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func azione1click(_ sender: Any) {
-        print("azione dev 1 beta 1 - beta 2")
+        print("azione dev 1 CIAO 1")
     }
     
     override func didReceiveMemoryWarning() {
